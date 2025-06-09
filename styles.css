@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+body {
+  font-family: 'Baskervville', serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://i.imgur.com/rzrf35h.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #1e2a38;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 100%;
+}
+
+#main {
+  padding: 2rem;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  color: orangered;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: orangered;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.author-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.author-info {
+  font-size: 0.95rem;
+  min-width: 250px;
+}
+
+.author-name a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.author-name a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #333;
+}
+
+.social-icons a:hover {
+  color: orangered;
+}
+
+#img-div {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#image {
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #00beef;
+}
+
+#tribute-info h2 {
+  color: orangered;
+  margin-top: 2rem;
+}
+
+#tribute-info p,
+#tribute-info1 p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+blockquote {
+  color: #2980b9;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+blockquote::before {
+  content: '" ';
+}
+
+blockquote::after {
+  content: ' "';
+}
+
+footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media only screen and (max-width: 720px) {
+  .author-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+}
